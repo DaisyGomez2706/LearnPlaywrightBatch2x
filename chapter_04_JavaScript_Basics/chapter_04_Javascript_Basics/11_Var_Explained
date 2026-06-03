@@ -1,0 +1,17 @@
+var a=10;
+console.log(a); // Output: 10
+
+function printHello() {
+    console.log( "Hello, World!");
+    var a= 20; // This 'a' is different from the global 'a'
+    console.log(a); // Output: 20
+
+    if (true) {
+        var a= 30;
+        console.log(a); // Output: 30
+    }
+}
+printHello(); // Output: 20
+
+console.log(a); // Output: 10 (global 'a' is unchanged)
+
